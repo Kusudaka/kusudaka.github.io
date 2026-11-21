@@ -316,7 +316,6 @@ a:hover {
   font-size: 20px;
   text-align: justify;
   display: inline-block;
-  
 }
 
 .sp-only {
@@ -348,35 +347,88 @@ a:hover {
 @media screen and (max-width: 767px) {
     header {
     width: 100%;
-    background-color: black;
     position: fixed;
-    top: -1%;
-    z-index: 5;
+    top: 0;
   }
 
   header ul {
     display: flex;
     margin: 0;
+    gap: 20px;
   }
 
   header li {
-    display: inline;
-    line-height: 2.4em;
-    list-style: none;
-    margin: 32px 0;
+    margin: 12px 0;
+    font-size: 12px;
+    line-height: 1.5em;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
     font-size: 16px;
-    font-family: "Dela Gothic One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+  }
+
+  li h1 {
+    font-size: 16px;
   }
 
   .wrapper {
-    padding-top: 80px;
-    margin: 70px 0;
+    padding-top: 60px;
+    margin: 20px 0;
   }
 
   .character-wrapper {
     margin: 30px 50px;
+  }
+
+  .big-image img {
+  padding-bottom: 32px;
+  width: 300px;
+  height: 300px;
+  }
+
+  .random-chara img {
+  width: 120px;
+  height: 120px;
+  margin: 0 -10px 50px -10px;
+  }
+
+  .youtube iframe {
+   max-width: 100%;
+  }
+
+  .bar img {
+    width: 392px;
+    height: 91px;
+  }
+
+  .logo-title img {
+    width: 224px;
+    height: 74.5px;
+  }
+
+  .small-box {
+  padding: 0 10px;
+  text-align: center;
+  }
+
+  .character-icon img {
+  width: 120px;
+  height: 120px;
+  margin-top: 10px;
+  }
+
+  .character-icon p {
+    font-size: 24px;
+  }
+
+  .big-box {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-around;
   }
 
   .character-big-box {
@@ -386,7 +438,23 @@ a:hover {
   }
 
   .character-image img {
-    width: 384px;
-    height: 512px;
+    width: 268.8px;
+    height: 358.4px;
   }
+
+  .character-discription {
+    text-align: center;
+    background-color: white;
+    border-radius: 3%;
+    box-shadow: 10px 10px;
+  }
+
+  .character-discription p{
+    width: 300px;
+    font-size: 16px;
+  }
+
+  .guideline-discription p{
+    width: 360px;
+    font-size: 16px;
 }
