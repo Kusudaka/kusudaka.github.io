@@ -90,7 +90,6 @@ a:hover {
 
 .small-box {
   width: 100%;
-  max-width: 600px;
   padding: 0 10px;
   box-sizing: border-box;
   text-align: center;
@@ -135,6 +134,8 @@ a:hover {
   display: flex;
   flex-flow: row wrap;
   margin-top: 20px;
+  justify-content: center;
+  align-items: center;
 }
 
 .select-img a {
@@ -480,11 +481,6 @@ a:hover {
   .guideline-discription p{
     width: 280px;
     font-size: 16px;
-  }
-
-  .select-img {
-    justify-content: center;
-    align-items: center;
   }
 
 }
