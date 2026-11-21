@@ -318,16 +318,6 @@ a:hover {
   display: inline-block;
 }
 
-.sp-only {
-  display: none;
-}
-
-@media (max-width: 767px) {
-  .sp-only {
-    display: inline;
-  }
-}
-
 
 .animate-fadein{
   animation: fadeIn 0.8s;
@@ -354,12 +344,12 @@ a:hover {
   header ul {
     display: flex;
     margin: 0;
-    gap: 20px;
+    gap: 15px;
   }
 
   header li {
     margin: 12px 0;
-    font-size: 12px;
+    font-size: 10px;
     line-height: 1.5em;
   }
 
@@ -391,18 +381,28 @@ a:hover {
   }
 
   .random-chara img {
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
   margin: 0 -10px 50px -10px;
   }
 
+  .youtube {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    aspect-ratio: 16 / 9;
+  }
+
   .youtube iframe {
-   max-width: 100%;
+    display: block;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 16 / 9;
   }
 
   .bar img {
-    width: 392px;
-    height: 91px;
+    width: 313.6px;
+    height: 72.8px;
   }
 
   .logo-title img {
@@ -450,11 +450,16 @@ a:hover {
   }
 
   .character-discription p{
-    width: 300px;
-    font-size: 16px;
+    width: 220px;
+    font-size: 14px;
+  }
+
+  .character-discription h1{
+    font-size: 28px;
   }
 
   .guideline-discription p{
-    width: 360px;
+    width: 280px;
     font-size: 16px;
+  }
 }
