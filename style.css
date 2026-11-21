@@ -83,12 +83,16 @@ a:hover {
 
 .big-box {
   display: flex;
-  flex-flow: wrap;
+  flex-flow: row nowrap;
   justify-content: space-around;
+  align-items: flex-start;
 }
 
 .small-box {
-  padding: 0 40px;
+  width: 100%;
+  max-width: 600px;
+  padding: 0 10px;
+  box-sizing: border-box;
   text-align: center;
 }
 
@@ -117,7 +121,10 @@ a:hover {
 .random-chara {
   padding-top: 50px;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 .random-chara img{
   width: 160px;
   height: 160px;
@@ -125,9 +132,9 @@ a:hover {
 }
 
 .select-img {
-  
-  flex-flow: wrap;
-  justify-content: center;
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: 20px;
 }
 
 .select-img a {
@@ -215,10 +222,15 @@ a:hover {
   justify-content: center;
 }
 
-.character-image img{
-  width: 499.2px;
-  height: 665.6px;
-  margin: 0 40px;
+.character-image {
+  text-align: center;
+}
+
+.character-image img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
 }
 
 .character-discription {
@@ -362,7 +374,7 @@ a:hover {
   }
 
   li h1 {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .wrapper {
@@ -410,11 +422,6 @@ a:hover {
     height: 74.5px;
   }
 
-  .small-box {
-  padding: 0 10px;
-  text-align: center;
-  }
-
   .character-icon img {
   width: 120px;
   height: 120px;
@@ -426,9 +433,18 @@ a:hover {
   }
 
   .big-box {
-  display: flex;
-  flex-flow: wrap;
-  justify-content: space-around;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .small-box {
+    width: 100%;
+    max-width: 560px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    text-align: center;
   }
 
   .character-big-box {
@@ -438,9 +454,12 @@ a:hover {
   }
 
   .character-image img {
-    width: 268.8px;
-    height: 358.4px;
-  }
+      width: 268.8px;
+      max-width: 100%;
+      height: auto;
+      margin: 0 auto;
+      margin-bottom: 20px;
+    }
 
   .character-discription {
     text-align: center;
@@ -462,4 +481,10 @@ a:hover {
     width: 280px;
     font-size: 16px;
   }
+
+  .select-img {
+    justify-content: center;
+    align-items: center;
+  }
+
 }
