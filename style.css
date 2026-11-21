@@ -230,6 +230,7 @@ a:hover {
 .character-image img {
   display: block;
   max-width: 100%;
+  width: 768px;
   height: auto;
   margin: 0 auto;
 }
@@ -482,5 +483,4 @@ a:hover {
     width: 280px;
     font-size: 16px;
   }
-
 }
